@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Br3-MQ-KOc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Happiness View Controller-->
+        <scene sceneID="h6a-Cu-3rh">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Br3-MQ-KOc" customClass="happinessViewController" customModule="Happy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gDy-jp-Tph">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xuk-o7-2ul" customClass="FaceView" customModule="Happy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="onz-QH-aps"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xuk-o7-2ul" firstAttribute="leading" secondItem="gDy-jp-Tph" secondAttribute="leadingMargin" id="2Gy-uF-lCX"/>
+                            <constraint firstItem="Xuk-o7-2ul" firstAttribute="trailing" secondItem="gDy-jp-Tph" secondAttribute="trailingMargin" id="YO5-Gl-HwM"/>
+                            <constraint firstItem="Xuk-o7-2ul" firstAttribute="top" secondItem="onz-QH-aps" secondAttribute="top" id="p7Q-9z-yeF"/>
+                            <constraint firstItem="Xuk-o7-2ul" firstAttribute="bottom" secondItem="onz-QH-aps" secondAttribute="bottom" id="uG0-eE-NmT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="faceView" destination="Xuk-o7-2ul" id="mxU-6Q-kFj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5O-eo-NIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="127.90178571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
